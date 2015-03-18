@@ -24,7 +24,7 @@ func main() {
 		if err != nil {
 			log.Fatal(err)
 		}
-		println(hash)
+		io.WriteString(os.Stdout, hash)
 	}
 }
 
